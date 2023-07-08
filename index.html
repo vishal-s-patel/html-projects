@@ -7,29 +7,69 @@
     <title>Landing Page</title>
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        body {
+            font-family: 'Bebas Neue', sans-serif;
+            background-color: #495057;
+            padding: 100px;
+            color: #f1f3f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .title {
+            letter-spacing: 2px;
+        }
+
         .project-container {
+            max-width: 500px;
+            flex-wrap: wrap;
             margin: 50px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
         }
 
         .project-container a {
             text-decoration: none;
-            border: 1px solid black;
+            border: 1px solid #ddd;
             border-radius: 5px;
             padding: 30px;
+            display: inline-block;
+            height: 100px;
+            width: 200px;
+        }
+
+        a:link,
+        a:active,
+        a:visited {
+            color: #fff;
         }
     </style>
 </head>
 
 <body>
+    <h1 class="text-center title">5 Projects with HTML, CSS & JavaScript</h1>
     <section class="project-container">
         <a href="./blurry-loading/index.html">Blurry Loading</a>
         <a href="./vertical-slider/index.html">Vertical Slider</a>
+        <a href="./random-choice-picker/index.html">Random Choice Picker</a>
+        <a href="./live-user-filter/index.html">Live User Filter</a>
+        <a href="./content-place-holder/index.html">Content Placeholder</a>
     </section>
 
 </body>
